@@ -1,0 +1,90 @@
+:root {
+    --blue: #3b5998;
+    --white: #f3f3f3;
+    --grey: #999999;
+    --black: #000;
+}
+
+body {
+    background-image: url("https://images.unsplash.com/photo-1594904351111-a072f80b1a71?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=735&q=80");
+    background-repeat: no-repeat;
+    background-size:cover;
+    margin: 0;
+    padding: 0px;
+    display: flex;
+    overflow: hidden;
+    height: 100vh;
+    align-items: center;
+    font-size: 1.2rem;
+}
+
+h1 {
+    margin: 0;
+    padding: 0;
+    text-align: center;
+}
+
+p {
+    width: 90%;
+    margin: 15px auto;
+    text-align: left;
+}
+
+a {
+    color: var(--blue);
+}
+
+section {
+    width: 90%;
+    margin: auto;
+    padding: 15px auto;
+    text-align: left;
+    line-height: 1.5rem;
+}
+
+.btn {
+    width: 100%;
+    margin: auto;
+    padding: 10px;
+    text-align: center;
+}
+
+button {
+    padding: 5px 15px;
+    color: var(--white);
+    background-color: var(--blue);
+}
+
+
+#main-container {
+    border: 3px solid var(--blue);
+    border-radius: 30px;
+    width: 90%;
+    margin: auto;
+    background-color: var(--white);
+    box-shadow: 0 0 30px var(--black)
+}
+
+fieldset {
+   margin: 5%auto;
+   height: 100%;
+   width: 90%;
+   padding: 0;
+}
+
+legend {
+    text-align: center;
+    margin: auto;
+    font-size: 1.2rem;
+}
+
+ul {
+    list-style: none;
+    text-align: center;
+}
+
+ul li {
+    display: inline;
+    padding: 5px;
+}
+
