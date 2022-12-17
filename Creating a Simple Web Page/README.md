@@ -1,6 +1,6 @@
-#Personal webpage
+# Personal webpage
 
-##This webpage is created for course challenge in making one page website.
+## This webpage is created for course challenge in making one page website.
 
 I decided creating my own personal webpage where I will present myself and my work, knowledge and experience.
 
