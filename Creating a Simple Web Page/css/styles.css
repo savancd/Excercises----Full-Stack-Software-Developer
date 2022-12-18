@@ -1,3 +1,8 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@100;300;600;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,300;0,400;0,700;0,900;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@900&display=swap');
+
+/* start global */
 * {
     padding: 0;
     margin: 0;
@@ -6,16 +11,29 @@
 :root {
     --middle-grey: #999999;
     --black: #000;
-    --dark-grey: rgb(44, 44, 44);
-    --white: #fff;
-    --light-blue: rgb(30, 181, 252);
+
+    --dark-grey: #212121;
+    --green: #34D7A1;
+    --light-blue: #617BE5;
+    --white: #f3f3f3;
 }
+
+/* end global */
+
+@media only screen and (max-width: 640px) { 
+
+/* start header */
 
 header {
     width: 100%;
     height: 80vh;
     background: var(--black);
+    background: linear-gradient(to top, #212121ba, #617BE5cc), url("../img/DSCF8533_small.jpg") no-repeat top center;
+    background-size: cover;"
+    background-repeat: no-repeat;
+    background-position: bottom;
     overflow: hidden;  
+    color: #FFFFFF
 }
 
 .wrap-m {
@@ -23,25 +41,70 @@ header {
 } 
 
 .h-border  {
-    border-top: 2px solid var(--light-blue);
-    border-left: 2px solid var(--light-blue);
-    width: 96%;
-    height: 72vh;
+    border-bottom: 2px solid var(--green);
+    border-left: 2px solid var(--green);
+    /* width: 96%; */
+    height: 76vh;
     position: absolute;
+    top: 2%;
   }
   
-  .h-border h1 {
-    font-size: 12px;
-    text-align: left;
-    margin-left: 2%;
-    margin-top: .5em;
+  h1 {
+    letter-spacing: 15px;
+    transform: rotate(-90deg);
+  /* Safari */
+  -webkit-transform: rotate(-90deg);
+  /* Firefox */
+  -moz-transform: rotate(-90deg);
+  /* IE */
+  -ms-transform: rotate(-90deg);
+  /* Opera */
+  -o-transform: rotate(-90deg);
+  /* Internet Explorer */
+  filter: progid:DXImageTransform.Microsoft.BasicImage(rotation=3);
   }
   
   .h-border  h1 span {
     display: inline;
-    background: var(--black);
     padding: 5px 10px;
     position: relative;
     top: -1.3em;
-    color: var(--light-blue);
+    color: var(--white);
   }
+
+/* logo name */
+
+
+  /* button */
+
+  .h-border .btn {
+    float: inline-end;
+  }
+
+  button {
+    text-align: center;
+    margin-bottom: 5%;
+    padding: 5px 25px;
+  }
+
+  /* wrap - text on banner */
+
+
+  .wrap {
+    width: 90%;
+    margin: 5% auto;
+  }
+
+
+/* end header */
+
+} 
+
+/* content container */
+
+#content-container {
+  width: 90%;
+  margin: 10px auto;
+}
+
+
