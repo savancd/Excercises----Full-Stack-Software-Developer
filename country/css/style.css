@@ -1,4 +1,10 @@
-/*  */
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&family=PT+Sans&display=swap');
+
+/* global */
+
+* {
+    overflow-x: hidden;
+}
 
 body {
     width: 100%;
@@ -16,11 +22,12 @@ h1 {
 
 :root {
     --white: #f3f3f3;
+    --pure-white: #fff;
     --light-gray: #ebebeb;
     --red: #ff0000;
-    --blue: #0000ff;
-    --green: #00ff00;
-    --black: rgb(4, 5, 12);
+    --blue: #006eff;
+    --black: #000;
+    --lighterBlack: rgb(6, 7, 26);
 }
 
 header {
@@ -29,43 +36,199 @@ header {
     padding: 0;
 }
 
+/* top bar */
+
 #topBar {
-    background-color: var(--green);
+    background: var(--lighterBlack);
     width: 100%;
-    height: 50px;
+    height: 25px;
     top: 0;
-    color: var(--green);
-    position: absolute;
+    padding: 10px;
+}
+
+#topBar .wrapper p {
+    text-align: center;
+    font-size: 1.2rem;
+    color: var(--pure-white);
+    font-family: 'PT Sans', sans-serif;
+    text-shadow: 0px 0px 25px var(--pure-white);
+}
+
+
+/* navigation start */
+
+#navbar {
+    width: 100%;
+    background-color: var(--white);
 }
 
 nav {
     width: 100%;
-    height: 50px;
+    height: 70px;
     margin: 0 auto;
-    background-color: var(--green);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    overflow: hidden;
 }
 
-.banner {
+nav .logo {
+    width: 120px;
+    color: #ff0000;
+}
+
+nav ul li {
+    list-style: none;
+    display: inline-block;
+    margin-right: 60px;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 1.3rem;
+    font-weight: bolder;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: var(--black);
+    text-transform: uppercase;
+}
+
+nav ul li a:hover {
+    text-decoration: underline 3px var(--blue);
+    color: var(--lighterBlack);
+}
+
+
+/* navigation end */
+
+
+/* banner */
+
+.backVideo {
     width: 100%;
-    height: 400px;
-    top: 0;
-    margin: 0 auto;
-    background-color: #0000ff;
+    height: 100%;
+    padding: 0;
+    margin: 0;
+    z-index: -1;
 }
 
-.wrapper {
-    width: 80%;
+.content {
+    position: absolute;
+    top: 40%;
+    width: 100%;
+    margin: 3% auto;
+    padding: 20px;
+    
+}
+
+.wrapperContent {
+    width: 50%;
+    text-align: center;
+    margin: 0 auto;
+}
+
+
+.content h1, p {
+    color: var(--white);
+    font-family: 'Open Sans', sans-serif;
+}
+
+.content h1 {
+    font-size: 7rem;
+}
+
+.content p {
+    font-size: 1.3rem;
+    line-height: 1.6rem;
+    overflow: hidden;
+}
+
+.banner .wrapper {
     height: 100%;
-    background-color: yellow;
-    opacity: 0.5;
-    position: fixed;
-    left: 10%;
-    right: 10%;
+}
+
+/* banner end */
+
+.wrapper, .bodyWrapper {
+    width: 80%;
+    margin: 0 auto;
+  }
+
+  .wrapper p {
+    margin-top: 0;
   }
 
   .bodyContainer {
-    background-color: antiquewhite;
+    background-color: var(--pure-white);
     width: 100%;
-    height: 100vh;
   }
 
+/* sec-1 "section 1" */
+
+.sec1 {
+    position: relative;
+    height: 100%;
+    padding: 0 1.5rem 1.5rem 1.5rem;
+    top: -5em;
+    background-color: var(--light-gray);
+    box-shadow: 0px 0px 15px rgba(0, 0, 0, .3);
+    border-radius: 30px;
+    font-size: 1.2rem;
+    z-index: 99;
+}
+
+.note {
+    background-color: red;
+    position: relative;
+    top: -1em;
+    padding: 10px;
+    margin: 0;
+    border-radius: 30px;
+    box-shadow: 0px 0px 15px rgba(0, 0, 0, .3);
+    text-align: center;
+}
+
+footer {
+    width: 100%;
+    background-color: var(--black);
+    bottom: 0;
+    padding: 2rem;
+    text-align: center;
+}
+
+footer ul {
+    list-style: none;
+    text-align: center;
+}
+
+footer ul li {
+    display: inline;
+    margin-right: 6rem;
+    font-size: 1.2rem;
+}
+
+footer a {
+    color: var(--white);
+}
+
+footer a:hover {
+    color: var(--blue);
+}
+
+/* Under Construction */
+
+#uConstruction {
+    width: 100%;
+    text-align: center;
+    margin-top: 5%;
+    overflow: hidden;
+}
+
+#uConstruction h1 {
+    font-size: 4rem;
+}
+
+#uConstruction img {
+    border-radius: 30px;
+    width: 30%;
+    margin-top: 5rem;
+}
